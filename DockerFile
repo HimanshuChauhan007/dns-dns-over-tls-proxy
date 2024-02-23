@@ -1,0 +1,18 @@
+# Use Alpine Linux as base image
+FROM alpine:latest
+
+# Install openssl package
+RUN apk --no-cache add openssl
+
+# Copy the shell script to the container
+COPY dns_proxy.sh /proxy.sh
+
+# Set execute permission for the shell script
+RUN chmod +x /proxy.sh
+
+# Expose port 53 for DNS traffic
+EXPOSE 53/tcp
+EXPOSE 53/udp
+
+# Run the shell script when the container starts
+CMD ["/proxy.sh"]
