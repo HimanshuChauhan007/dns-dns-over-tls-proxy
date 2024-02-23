@@ -18,6 +18,6 @@ docker run -d -p 53:53/udp -p 53:53/tcp dns-proxy
 
 
 ### Testing the Proxy
-Once the container is running, you can test the DNS-to-DNS-over-TLS proxy by sending DNS queries to it. Here's an example using `dig` OR nslookup command:
+Once the container is running, you can test the DNS-to-DNS-over-TLS proxy by sending DNS queries to it. Here's an example using `dig` OR 'nslookup' command:
 
 dig @localhost example.com
