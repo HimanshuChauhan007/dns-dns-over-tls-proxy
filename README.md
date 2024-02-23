@@ -8,7 +8,7 @@ This Docker container runs a simple DNS-to-DNS-over-TLS proxy that forwards DNS 
 
 ## Usage
 
-1. Clone this repository:
+1. Clone this repository: https://github.com/HimanshuChauhan007/dns-dns-over-tls-proxy.git
 
 ### Building the Docker Image
 docker build -t dns-proxy .
