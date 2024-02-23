@@ -2,7 +2,13 @@
 
 This Docker container runs a simple DNS-to-DNS-over-TLS proxy that forwards DNS queries to DNS-over-TLS servers of Google and Cloudflare.
 
+## Requirements
+
+- Docker
+
 ## Usage
+
+1. Clone this repository:
 
 ### Building the Docker Image
 docker build -t dns-proxy .
