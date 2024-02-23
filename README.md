@@ -19,7 +19,9 @@ This Docker container runs a simple DNS-to-DNS-over-TLS proxy that forwards DNS 
 ###
 Configure Your Client to Use the Proxy:
 
-Identify the IP address of the running container using `docker inspect dns-proxy | grep "IPAdress"`
+Command to get <container_id>: `docker ps` OR `docker container ls'
+
+Identify the IP address of the running container using `docker inspect <container_id> | grep "IPAddress"` OR `docker inspect <container_id> | findstr "IPAddress"`
 Configure your client application (e.g., your computer's network settings) to use the container's IP address as the primary DNS server.
 
 ### Testing the Proxy
